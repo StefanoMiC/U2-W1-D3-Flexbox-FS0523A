@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+.container {
+  max-width: 900px;
+  margin-inline: auto;
+  background-color: #ebebeb;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.antique {
+  background-color: antiquewhite;
+}
+
+.aqua {
+  background-color: aquamarine;
+}
+
+.gold {
+  background-color: palegoldenrod;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+#second {
+  flex-direction: row-reverse;
+}
+
+#third {
+  flex-direction: column;
+  min-height: 650px;
+}
+
+#fourth {
+  flex-wrap: wrap;
+}
+
+#fifth {
+  justify-content: center;
+}
+
+#sixth {
+  justify-content: space-between;
+}
+
+#seventh {
+  justify-content: space-around;
+}
+
+#eigth {
+  justify-content: space-evenly;
+}
+
+#ninth {
+  min-height: 600px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#tenth {
+  min-height: 600px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#tenth .box,
+#eleventh .box {
+  height: unset;
+}
+
+#eleventh {
+  align-items: baseline;
+  justify-content: center;
+}
+
+#twelveth {
+  flex-wrap: wrap;
+  min-height: 50vh;
+  align-content: center;
+  row-gap: 30px;
+  column-gap: 15px;
+}
+/* #fourteenth .box:nth-of-type(2) {
+  width: 300px;
+  flex-grow: 0;
+} */
+#fourteenth .box {
+  flex-grow: 1;
+}
+
+/* #fourteenth .box:hover {
+  flex-grow: 99;
+} */
+
+#fifteenth .box {
+  flex-grow: 1;
+}
+
+#fifteenth .box:nth-of-type(2) {
+  flex-grow: 9;
+  flex-shrink: 9;
+}
+#fifteenth .box:last-of-type {
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  /* in questo caso il cerchio non si deforma mai */
+}
+
+#fifteenth img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+#fifteenth .coral {
+  background-image: url("https://images.unsplash.com/photo-1682685796852-aa311b46f50d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D");
+}
+
+#sixteenth {
+  flex-wrap: wrap;
+}
+
+#sixteenth .box {
+  height: unset;
+}
+
+#sixteenth .box.aqua {
+  flex-basis: 500px;
+  flex-grow: 999;
+}
+
+#sixteenth .box.crimson {
+  flex-basis: 120px;
+  color: white;
+  font-size: 36px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox playground</title>
+    <link rel="stylesheet" href="./playground-style.css">
+</head>
+
+<body>
+    <h2>CONTAINER PROPERTIES</h2>
+    <!-- il comportamento di base di elementi in un contenitore flex è quello di distribuirsi orizzontalmente (sull'asse delle x) 
+        senza mai rompersi su nuove linee -->
+    <!-- <h3>display flex: direzione row</h3>
+    <div class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione row-reverse (invertito)</h3>
+    <div id="second" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione column</h3>
+    <div id="third" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+
+    <h3>display flex: direzione row con possibilità di rottura su più linee</h3>
+    <div id="fourth" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione row con allineamento centrale su asse x</h3>
+    <div id="fifth" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione row con spazio TRA gli elementi</h3>
+    <div id="sixth" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione row con spazio ATTORNO gli elementi</h3>
+    <div id="seventh" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione row con spazio OMOGENEO ATTORNO gli elementi </h3>
+    <div id="eigth" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione column allineato sull'angolo in basso a destra</h3>
+    <div id="ninth" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div>
+
+    <h3>display flex: direzione row con reset sullo stretch verticale</h3>
+    <div id="tenth" class="container">
+        <div class="box antique">Lorem ipsum dolor sit amet.</div>
+        <div class="box aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic nam qui vitae ex vel!
+        </div>
+        <div class="box gold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis, deserunt
+            perspiciatis iusto voluptatibus harum tenetur ducimus? Eligendi libero autem vitae commodi corporis corrupti
+            nemo.</div>
+        <div class="box coral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsam.</div>
+        <div class="box crimson">Lorem, ipsum.</div>
+    </div>
+
+
+    <h3>display flex: direzione row con allineamento sulla baseline del testo</h3>
+    <div id="eleventh" class="container">
+        <div class="box antique">
+            <img src="https://www.stickersmurali.com/it/img/as1281-jpg/folder/products-listado-merchanthover/adesivi-murali-logo-nike.jpg"
+                alt="" width="100px">
+            Lorem ipsum dolor sit amet. Lorem, ipsum.
+        </div>
+        <div class="box antique">
+            <img src="https://www.brandforum.it/wp-content/uploads/2021/05/brandforum_logotale_adidas_logo3.jpg" alt=""
+                width="100px">
+            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, nesciunt!
+        </div>
+        <div class="box antique">
+            <img src="https://www.salvatorepumo.it/wp-content/uploads/2023/07/logo-timberland-oggi.png" alt=""
+                width="100px">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+    <h3>display flex: direzione row con wrap e align-content e gap</h3>
+    <div id="twelveth" class="container">
+        <div class="box antique">Lorem ipsum</div>
+        <div class="box aqua">Lorem ipsum</div>
+        <div class="box gold">Lorem ipsum</div>
+        <div class="box coral">Lorem ipsum</div>
+        <div class="box crimson">Lorem ipsum</div>
+        <div class="box antique">Lorem ipsum</div>
+        <div class="box aqua">Lorem ipsum</div>
+        <div class="box gold">Lorem ipsum</div>
+        <div class="box coral">Lorem ipsum</div>
+        <div class="box crimson">Lorem ipsum</div>
+    </div>
+
+    <h2>FLEX-ITEMS PROPERTIES</h2>
+
+    <h3>flex-item con ordinamento modificato</h3>
+    <div id="thirteenth" class="container">
+        <div class="box antique" style="order: 2">1</div>
+        <div class="box aqua" style="order: 1">2</div>
+        <div class="box gold" style="order: 4">3</div>
+        <div class="box coral" style="order: 5">4</div>
+        <div class="box crimson" style="order: 3">5</div>
+    </div>
+
+    <h3>flex-item in crescita</h3>
+    <div id="fourteenth" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box gold">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+    </div> -->
+
+    <h3>flex-item crescono e si riducono in proporzioni differenti</h3>
+    <div id="fifteenth" class="container">
+        <div class="box antique"></div>
+        <div class="box aqua"><img
+                src="https://images.unsplash.com/photo-1682685797742-42c9987a2c34?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""></div>
+        <div class="box gold"></div>
+        <div class="box coral"></div>
+        <div class="box crimson"></div>
+    </div>
+
+    <h3>flex-item si gestiscono nello spazio in autonomia</h3>
+    <div id="sixteenth" class="container">
+        <div class="box crimson">
+            <span>7</span>
+        </div>
+        <div class="box aqua">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto deleniti culpa cupiditate
+                recusandae ut rerum. Esse qui earum eveniet corrupti nihil, minima ex, est voluptatum dolore laborum
+                impedit accusamus.
+                Debitis veritatis sint magnam, mollitia ullam dolorum odit sit cum perferendis nisi natus voluptate
+                cumque tempora eveniet, facilis accusantium reiciendis fugit nobis deserunt saepe iusto quas. Ipsa
+                commodi beatae laudantium.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
